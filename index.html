@@ -15,14 +15,8 @@
         <div class="section">
             <div class="container">
 
-                <button type="button" 
-                class="btn btn-warning"
-                @click="generatorEmails">
-                    Warning
-                </button>
-
-                <ul>
-                    <li v-for="email in emails">
+                <ul v-for="email in emails">
+                    <li>
                         {{email}}
                     </li>
                 </ul>
